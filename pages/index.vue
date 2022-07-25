@@ -1,6 +1,7 @@
 <template>
+  <fa :icon="['fas', 'adjust']" />
   <Tutorial/>
-  
+
 </template>
 
 <script lang="ts">
