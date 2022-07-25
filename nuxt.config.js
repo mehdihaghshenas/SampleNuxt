@@ -28,17 +28,30 @@ export default {
   buildModules: [
     // https://go.nuxtjs.dev/typescript
     '@nuxt/typescript-build',
-    '@nuxtjs/fontawesome',
+    'nuxt-fontawesome'
+    // '@nuxtjs/fontawesome',
 
   ],
+  // fontawesome: {
+  //   component: 'Fa',
+  //   suffix: false,
+  //   icons: {
+  //     solid: true,
+  //     brands: true,
+  //   },
+  // },
+
   fontawesome: {
-    component: 'Fa',
-    suffix: false,
-    icons: {
-      solid: true,
-      brands: true,
-    },
+    component: 'fa',
+    imports: [
+      //import whole set
+      {
+        set: '@fortawesome/free-solid-svg-icons',
+        icons: ['fas']
+      }
+    ]
   },
+
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
     // https://go.nuxtjs.dev/bootstrap

@@ -1,6 +1,5 @@
 <template>
   <fa :icon="['fas', 'adjust']" />
-  <Tutorial/>
 
 </template>
 
